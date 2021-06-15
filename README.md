@@ -31,6 +31,16 @@ docker-compose up -d
 
 The Web UI will be running on the designated port (default: 8000).
 
+Check the server fro the command line:
+
 ```
 $ wget https://localhost:8000
+```
+
+It should return: ***200 OK***
+
+Check the server through the browser:
+
+```
+https://[HOSTNAME]:8000
 ```
