@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+
+  webui:
+    build: webui
+    ports:
+    - "8000:80"
+    volumes:
+    - "./webui/static/:/static/"
+    logging:
+      driver: gelf
+      options:
+        gelf-address: udp://localhost:12201
+
+  redis:
+    image: redis
+    logging:
+      driver: gelf
+      options:
+        gelf-address: udp://localhost:12201
+
+  worker:
+    build: worker
+    logging:
+      driver: gelf
+      options:
+        gelf-address: udp://localhost:12201
