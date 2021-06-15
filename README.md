@@ -29,8 +29,8 @@ $ cd /containers/docker-coins/
 docker-compose up -d
 ```
 
-The Web UI will be running on the designated port (default: 80).
+The Web UI will be running on the designated port (default: 8000).
 
 ```
-$ wget https://localhost:80
+$ wget https://localhost:8000
 ```
