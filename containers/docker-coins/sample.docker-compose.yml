@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+
+  webui:
+    build: webui
+    ports:
+    - "8000:80"
+    volumes:
+    - "./webui/static/:/static/"
+
+  redis:
+    image: redis
+
+  worker:
+    build: worker
