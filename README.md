@@ -33,6 +33,12 @@ $ cd /containers/docker-coins/
 docker-compose up -d
 ```
 
+You should get:
+
+```
+Docker Coins
+Hello from Docker Coins!
+```
 The Web UI will be running on the designated port (default: 8000).
 
 Check the server fro the command line:
