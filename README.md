@@ -3,6 +3,8 @@ dockercoins-headstart
 
 Based on "Docker Coins" at https://github.com/jpetazzo/container.training/tree/main/dockercoins
 
+See video "#SwarmWeek with Jérôme Petazzoni" at https://www.youtube.com/watch?v=qbIvUvwa6As from 1:41
+
 See video "Getting Started with Kubernetes and container orchestration" at https://www.youtube.com/watch?v=J08MrW2NC1Y from 2:21:15
 
 ## 100 - Prerequisites
