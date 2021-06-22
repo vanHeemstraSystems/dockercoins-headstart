@@ -3,7 +3,7 @@ dockercoins-headstart
 
 Based on "Docker Coins" at https://github.com/jpetazzo/container.training/tree/main/dockercoins
 
-See video "Getting Started with Kubernetes and container orchestration" at https://www.youtube.com/watch?v=J08MrW2NC1Y from 2:20:00
+See video "Getting Started with Kubernetes and container orchestration" at https://www.youtube.com/watch?v=J08MrW2NC1Y from 2:21:15
 
 ## 100 - Prerequisites
 
