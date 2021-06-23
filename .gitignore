@@ -1,2 +1,4 @@
 /containers/docker-coins/docker-compose.yml
 /containers/docker-coins/docker-compose.logging.yml
+/containers/docker-coins/docker-compose.imaging.yml
+/containers/docker-coins/.env
