@@ -48,3 +48,10 @@ Check the server through the browser:
 ```
 https://[HOSTNAME]:8000
 ```
+
+You should get:
+
+```
+Docker Coins
+Hello from Docker Coins!
+```
