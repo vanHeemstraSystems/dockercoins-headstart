@@ -24,6 +24,7 @@ Make a copy of the following files:
 ```
 $ cp /containers/docker-coins/sample.docker-compose.yml /containers/docker-coins/docker-compose.yml
 $ cp /containers/docker-coins/sample.docker-compose.logging.yml /containers/docker-coins/docker-compose.logging.yml
+$ cp /containers/docker-coins/sample.env /containers/docker-coins/.env
 ```
 
 ### 300 - Build and run the Docker Coins
