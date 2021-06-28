@@ -88,6 +88,9 @@ https://[HOSTNAME]:8000
 You should get:
 
 ```
-Docker Coins
-Hello from Docker Coins!
+DockerCoin Miner WebUI
+
+= GRAPH =
+
+Current mining speed: - (Tweet this!)
 ```
