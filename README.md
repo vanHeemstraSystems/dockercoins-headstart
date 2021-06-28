@@ -44,7 +44,21 @@ The Web UI will be running on the designated port (default: 8000).
 Check the server from the command line:
 
 ```
-$ wget https://localhost:8000
+$ wget -i http://localhost:8000
+--2021-06-28 09:43:20--  http://localhost:8000/
+Resolving localhost (localhost)... ::1, 127.0.0.1
+Connecting to localhost (localhost)|::1|:8000... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: /index.html [following]
+--2021-06-28 09:43:20--  http://localhost:8000/index.html
+Reusing existing connection to [localhost]:8000.
+HTTP request sent, awaiting response... 200 OK
+Length: 233 [text/html]
+Saving to: ‘index.html.1’
+
+100%[==============================================================================================================================================================================>] 233         --.-K/s   in 0.04s   
+
+2021-06-28 09:43:20 (5.90 KB/s) - ‘index.html.1’ saved [233/233]
 ```
 
 It should return: ***200 OK***
