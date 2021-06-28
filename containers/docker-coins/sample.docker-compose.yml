@@ -6,6 +6,7 @@ services:
     build:
       context: ./rng
       args: # from env_file
+        IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
         PROXY_USER: ${PROXY_USER}
         PROXY_PASSWORD: ${PROXY_PASSWORD}
         PROXY_FQDN: ${PROXY_FQDN}
@@ -16,19 +17,56 @@ services:
       - "8001:80"
 
   hasher:
-    build: hasher
+    build:
+      context: ./hasher
+      args: # from env_file
+        IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
+        PROXY_USER: ${PROXY_USER}
+        PROXY_PASSWORD: ${PROXY_PASSWORD}
+        PROXY_FQDN: ${PROXY_FQDN}
+        PROXY_PORT: ${PROXY_PORT}
+    env_file:
+      - .env    
     ports:
       - "8002:80"
 
   webui:
-    build: webui
+    build:
+      context: ./webui
+      args: # from env_file
+        IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
+        PROXY_USER: ${PROXY_USER}
+        PROXY_PASSWORD: ${PROXY_PASSWORD}
+        PROXY_FQDN: ${PROXY_FQDN}
+        PROXY_PORT: ${PROXY_PORT}
+    env_file:
+      - .env     
     ports:
       - "8000:80"
     volumes:
       - "./webui/static/:/static/"
 
   redis:
-    image: redis
+    build:
+      context: ./redis
+      args: # from env_file
+        IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
+        PROXY_USER: ${PROXY_USER}
+        PROXY_PASSWORD: ${PROXY_PASSWORD}
+        PROXY_FQDN: ${PROXY_FQDN}
+        PROXY_PORT: ${PROXY_PORT}
+    env_file:
+      - .env     
 
   worker:
-    build: worker
+    build:
+      context: ./worker
+      args: # from env_file
+        IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
+        PROXY_USER: ${PROXY_USER}
+        PROXY_PASSWORD: ${PROXY_PASSWORD}
+        PROXY_FQDN: ${PROXY_FQDN}
+        PROXY_PORT: ${PROXY_PORT}
+    env_file:
+      - .env
+  
