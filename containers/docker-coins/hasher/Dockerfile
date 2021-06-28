@@ -1,4 +1,5 @@
-FROM ruby:alpine
+ARG IMAGE_REPOSITORY
+FROM ${IMAGE_REPOSITORY}/ruby:alpine
 
 # See https://stackoverflow.com/questions/29261811/use-docker-compose-env-variable-in-dockerbuild-file
 ARG PROXY_USER
