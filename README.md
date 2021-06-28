@@ -41,7 +41,7 @@ Starting docker-coins_redis_1  ... done
 
 The Web UI will be running on the designated port (default: 8000).
 
-Check the server fro the command line:
+Check the server from the command line:
 
 ```
 $ wget https://localhost:8000
