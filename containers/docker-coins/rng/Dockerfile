@@ -9,7 +9,7 @@ ARG PROXY_PORT
 #ENV HTTP_PROXY="http://${PROXY_USER}:${PROXY_PASSWORD}@${PROXY_FQDN}:${PROXY_PORT}"
 #ENV HTTPS_PROXY="http://${PROXY_USER}:${PROXY_PASSWORD}@${PROXY_FQDN}:${PROXY_PORT}"
 
-RUN pip install Flask
+RUN pip install Flask --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org
 COPY rng.py /
 CMD ["python", "rng.py"]
 EXPOSE 80
