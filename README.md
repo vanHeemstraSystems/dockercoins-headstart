@@ -31,7 +31,12 @@ $ cp /containers/docker-coins/sample.env /containers/docker-coins/.env
 
 ```
 $ cd /containers/docker-coins/
-docker-compose up -d
+$ docker-compose up -d
+Starting docker-coins_hasher_1 ... done
+Starting docker-coins_rng_1    ... done
+Starting docker-coins_webui_1  ... done
+Starting docker-coins_worker_1 ... done
+Starting docker-coins_redis_1  ... done
 ```
 
 The Web UI will be running on the designated port (default: 8000).
