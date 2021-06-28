@@ -1,4 +1,5 @@
-FROM node:4-slim
+ARG IMAGE_REPOSITORY
+FROM ${IMAGE_REPOSITORY}/node:4-slim
 
 # See https://stackoverflow.com/questions/29261811/use-docker-compose-env-variable-in-dockerbuild-file
 ARG PROXY_USER
