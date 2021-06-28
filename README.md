@@ -82,7 +82,7 @@ Found. Redirecting to /index.html
 Check the server through the browser:
 
 ```
-https://[HOSTNAME]:8000
+https://[FULLY QUALIFIED DOMAIN NAME]:8000
 ```
 
 You should get:
