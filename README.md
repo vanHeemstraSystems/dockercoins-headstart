@@ -49,6 +49,22 @@ $ wget https://localhost:8000
 
 It should return: ***200 OK***
 
+See the redirecting from the web server:
+
+```
+$ curl -i http://localhost:8000
+HTTP/1.1 302 Found
+X-Powered-By: Express
+Location: /index.html
+Vary: Accept
+Content-Type: text/plain; charset=utf-8
+Content-Length: 33
+Date: Mon, 28 Jun 2021 09:41:30 GMT
+Connection: keep-alive
+
+Found. Redirecting to /index.html
+```
+
 Check the server through the browser:
 
 ```
